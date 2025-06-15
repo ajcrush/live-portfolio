@@ -1,0 +1,16 @@
+.footer {
+  width: 100vw;
+  text-align: center;
+  padding: 24px 0 18px 0;
+  font-size: 1.1rem;
+  color: #444;
+  z-index: 2;
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 14px 0 10px 0;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,82 @@
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px 0 48px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: transparent;
+  z-index: 2;
+  position: relative;
+}
+
+.header__name {
+  color: #222;
+  letter-spacing: 1px;
+  margin-left: 24px;
+  padding-bottom: 8px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  border: none;
+  outline: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.header__resume {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  margin-right: 24px;
+}
+
+.header__resume:hover {
+  color: #4285f4;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .header {
+    padding: 18px 12px 0 12px;
+    font-size: 1rem;
+  }
+  .header__name {
+    margin-left: 6px;
+    font-size: 1rem;
+  }
+  .header__resume {
+    margin-right: 6px;
+    font-size: 1rem;
+  }
+}
+
+/* Animated underline effect */
+.header__hover-effect {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__underline {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 80%;
+  height: 2.5px;
+  background: #111;
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateX(-50%) scaleX(0);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+.header__hover-effect:hover .header__underline,
+.header__hover-effect:active .header__underline,
+.header__hover-effect:focus .header__underline {
+  opacity: 1;
+  transform: translateX(-50%) scaleX(1);
+  transition: opacity 0.3s, transform 0.3s;
+}
