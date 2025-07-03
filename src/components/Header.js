@@ -18,7 +18,7 @@ function Header() {
       </button>
       <a
         className="header__resume header__hover-effect"
-        href="https://drive.google.com/file/d/1bVt3CIVqI9SYBfB9wVs2SNqhG8DfaaCZ/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1xj46y6r87Dp1xd9HpPAfCY5rKZ0EGXav/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
